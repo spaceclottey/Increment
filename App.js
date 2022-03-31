@@ -8,7 +8,7 @@ export default function App() {
   const [data, setData] = useState("No data yet");
 
   useEffect(() => {
-    fetch("http:localhost:3001/api").then((res) => console.log(res));
+    fetch("http://localhost:3001/api").then((res) => console.log(res));
     // .then((res) => res.json())
     // .then((data) => setData(data.message));
   }, []);
@@ -68,7 +68,7 @@ export default function App() {
       <TextInput
         style={{ height: 40 }}
         placeholder="Add URL!"
-        onChexangeText={(text) => setText(text)}
+        onChangeText={(text) => setText(text)}
         // defaultValue={text}
         value={text}
       />
